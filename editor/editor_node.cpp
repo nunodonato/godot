@@ -1468,6 +1468,7 @@ void EditorNode::_edit_current() {
 		property_editor->edit(current_res);
 		node_dock->set_node(NULL);
 		object_menu->set_disabled(false);
+		EditorNode::get_singleton()->get_import_dock()->set_edit_path(current_res->get_path());
 
 		//resources_dock->add_resource(Ref<Resource>(current_res));
 
